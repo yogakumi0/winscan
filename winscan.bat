@@ -15,14 +15,16 @@
 
 
 @echo off
-title winscan tool by yogakumi0
+title winscan by yogakumi0
 setlocal
 
 :: Checking if the script is being run with administrator rights
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system" && (
+    color 2F
     echo Administrator privileges detected. Running script.
     echo.
 ) || (
+    color 4F
     echo Please run this script with administrator privileges.
     pause
     exit /b 1
