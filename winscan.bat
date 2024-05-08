@@ -45,20 +45,11 @@ dism /online /cleanup-image /scanhealth
 dism /online /cleanup-image /restorehealth
 echo.
 
-:: Ask the user if CHKDSK should be run
-set /p "runChkdsk=Do you want to run CHKDSK with repairing (needs to reboot your computer)? (Y/N): "
-if /i "%runChkdsk%"=="Y" (
-    echo.
-    echo ([92m3[0m) Scanning and repairing drive C:
-    echo.
-    chkdsk C: /f /x
-) else (
-    echo.
-    echo ([92m3[0m) Scanning drive C:
-    echo.
-    chkdsk C:
-    echo.
-)
+:: Run CHKDSK
+echo ([92m3[0m) chkdsk
+echo.
+chkdsk C:
+echo.
 
 :: Run SFC (2)
 echo ([92m4[0m) sfc
