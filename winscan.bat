@@ -52,7 +52,7 @@ chkdsk C:
 echo.
 
 :: Run SFC (2)
-echo ([92m4[0m) sfc (2)
+echo ([92m4[0m) sfc
 echo.
 sfc /scannow
 echo.
