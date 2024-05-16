@@ -14,7 +14,7 @@ WinScan is a batch file portable tool designed to repair corrupt Windows OS (10/
 ## Usage
 
 1. **Installation**:
-   - Download the `winscan.bat` file from the releases page.
+   - Download this repository as a zip.
    - Save it to a convenient location on your system.
 
 2. **Run as Administrator**:
