@@ -3,10 +3,8 @@
 WinScan is a batch file portable tool designed to repair corrupt Windows OS (10/11) files and fix disk errors. It achieves this by executing the following commands in the specified order:
 
 1. `SFC /ScanNow`: Scans and repairs Windows system files.
-2. `DISM /Online /Cleanup-Image /CheckHealth`: Checks the health of the Windows image.
-3. `DISM /Online /Cleanup-Image /ScanHealth`: Scans for component store corruption.
-4. `DISM /Online /Cleanup-Image /RestoreHealth`: Restores the Windows image from known good files.
-5. `CHKDSK`: Optionally, you can run this command to scan local drives for bad sectors (use the `/R` parameter for HDD drives).
+2. `DISM /Online /Cleanup-Image /RestoreHealth`: Restores the Windows image from known good files.
+3. `CHKDSK`: Optionally, you can run this command to scan local drives for bad sectors (use the `/R` parameter for HDD drives).
 
 ## Features
 
