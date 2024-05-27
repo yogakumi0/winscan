@@ -20,5 +20,5 @@ dism /online /cleanup-image /restorehealth
 Write-Host '(4/4) sfc' -ForegroundColor Green
 sfc /scannow
 
-Write-Host 'Press Enter to Continue...'
+Write-Host 'Repair process completed' -ForegroundColor Green
 pause
