@@ -18,7 +18,7 @@ WinScan is a powershell file portable tool designed to repair corrupt Windows OS
    ```
    irm https://raw.githubusercontent.com/yogakumi0/winscan/master/winscan.ps1 | iex
    ```
-3. Follow the prompts and wait until the repair is completed
+3. Follow the prompts and wait until the repair process is completed
 
 ## Support
 
