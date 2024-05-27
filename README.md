@@ -1,6 +1,6 @@
 # winscan - Windows Repair Tool
 
-Winscan is a powershell file portable tool designed to repair corrupt Windows OS (10/11) files and fix disk errors. It achieves this by executing the following commands in the specified order:
+WinScan is a powershell file portable tool designed to repair corrupt Windows OS (10/11) files and fix disk errors. It achieves this by executing the following commands in the specified order:
 
 1. `SFC /ScanNow`: Scans and repairs Windows system files.
 2. `DISM /Online /Cleanup-Image /RestoreHealth`: Restores the Windows image from known good files.
